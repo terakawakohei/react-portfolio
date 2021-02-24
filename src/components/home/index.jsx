@@ -17,7 +17,7 @@ const Home = () => {
     query {
       placeholderImage: file(relativePath: { eq: "warriors.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 550) {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }
@@ -26,13 +26,14 @@ const Home = () => {
   `)
   return (
     <>
-      <BackgroundImage
-        fluid={data.placeholderImage.childImageSharp.fluid}
-        alt="hero image"
-      />{" "}
       <Title>
         <HeadingXL>Terakawa Kohei </HeadingXL>
+        <HeadingXL>Terakawa Kohei </HeadingXL>
+        <HeadingXL>Terakawa Kohei </HeadingXL>
+        <HeadingXL>Terakawa Kohei </HeadingXL>
+        <HeadingXL>Terakawa Kohei </HeadingXL>
       </Title>
+
       {/* <SectionIntro>
         <ContainerLayout>
           <HomeSection>

@@ -1,7 +1,7 @@
 import Img from "gatsby-image"
 import styled from "styled-components"
 import variables from "../../data/variables"
-import heroImage from "../../assets/img/warriors.jpg"
+import BackgroundImg from "gatsby-background-image"
 
 export const HomeSection = styled.section`
   text-align: center;
@@ -12,9 +12,17 @@ export const HomeSection = styled.section`
     text-align: left;
   }
 `
-export const BackgroundImage = styled(Img)`
-  box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.15);
+export const BackgroundImage = styled(BackgroundImg)`
   width: 100%;
+  opacity: 1 !important;
+  background-size: cover;
+  background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.65) 100%
+    ),
+    url(qijin-xu.png) no-repeat center center scroll;
 `
 
 export const Title = styled.h1`
