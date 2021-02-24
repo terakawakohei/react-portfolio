@@ -14,8 +14,6 @@ import {
 } from "../components/home/style"
 
 const AboutIndex = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges
-
   return (
     <>
       <Layout>
