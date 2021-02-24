@@ -1,13 +1,28 @@
 import React from "react"
-import Layout from "./../components/layout"
 import SEO from "./../components/seo"
-import About from "../components/about"
+import Home from "../components/home"
+
+import Navbar from "./../components/layout/navbar"
+import Footer from "./../components/layout/footer"
+
+import {
+  GlobalStyle,
+  ContainerLayout,
+  MainContent,
+} from "./../components/common"
 
 const IndexPage = () => (
-    <Layout> 
-      <SEO title="About me" />
-      <About /> 
-    </Layout>
-  )
+  <>
+    <GlobalStyle />
+
+    <MainContent>
+      <ContainerLayout>
+        <Navbar siteTitle="teraka" />
+      </ContainerLayout>
+      <SEO title="Home" />
+      <Home />
+    </MainContent>
+  </>
+)
 
 export default IndexPage

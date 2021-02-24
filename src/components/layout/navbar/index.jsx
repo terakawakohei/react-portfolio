@@ -12,7 +12,6 @@ const Navbar = ({ siteTitle }) => (
         <NavbarLogo>
           <h3>
             <Link to="/">
-              <Smile className="align-middle" />{" "}
               <span className="align-middle"> {siteTitle} </span>
             </Link>
           </h3>
@@ -20,21 +19,25 @@ const Navbar = ({ siteTitle }) => (
         <div className="main-navigation">
           <NavbarList>
             <li>
-              <Link to="/" className="lined-link" activeClassName="active">
+              <Link to="/about" className="lined-link" activeClassName="active">
                 {" "}
-                <User /> <span> About </span>{" "}
+                <span> About </span>{" "}
               </Link>
             </li>
             <li>
               <Link to="/works" className="lined-link" activeClassName="active">
                 {" "}
-                <Briefcase /> <span> Portfolio </span>{" "}
+                <span> Portfolio </span>{" "}
               </Link>
             </li>
             <li>
-              <Link to="/blog" className="lined-link" activeClassName="active">
+              <Link
+                to="/contact"
+                className="lined-link"
+                activeClassName="active"
+              >
                 {" "}
-                <Feather /> <span> Blog </span>{" "}
+                <span> Contact </span>{" "}
               </Link>
             </li>
           </NavbarList>
