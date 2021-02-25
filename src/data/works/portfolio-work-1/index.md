@@ -14,7 +14,7 @@ Whether you like to dive straight into the fray, support your teammates, or some
 
 Assassin
 
-![champion akali](https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/en-gb/production/en-gb/static/assassin-d64d3ffdda15e1eed637aefe6a2c7fee.png#imgresponsive)
+![champion akali](./salty_egg.jpg)
 
 Fighter
 
@@ -40,4 +40,3 @@ Oh, and here's a great quote from this Wikipedia on
 > wrapped in plastic, and vacuum packed. From the salt curing process, the
 > salted duck eggs have a briny aroma, a gelatin-like egg white and a
 > firm-textured, round yolk that is bright orange-red in color.
-
