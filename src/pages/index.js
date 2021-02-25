@@ -15,15 +15,15 @@ import {
 const IndexPage = () => (
   <>
     <GlobalStyle />
-    <BackgroundImage>
-      <MainContent>
-        <ContainerLayout>
-          <Navbar siteTitle="teraka" />
-        </ContainerLayout>
-        <SEO title="Home" />
-        <Home />
-      </MainContent>
-    </BackgroundImage>
+    {/* <BackgroundImage> */}
+    <MainContent>
+      <ContainerLayout>
+        <Navbar siteTitle="teraka" />
+      </ContainerLayout>
+      <SEO title="Home" />
+      <Home />
+    </MainContent>
+    {/* </BackgroundImage> */}
   </>
 )
 

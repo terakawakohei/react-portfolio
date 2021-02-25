@@ -1,16 +1,16 @@
 ---
-title: "「出会え！！」"
+title: "witch"
 tags: ['photoshop', 'procriate']
 category: original
-image: './deae!!.jpg'
-date: "2020-11-14T22:11:05+09:00"
+image: './quontum.jpg'
+date: "2020-11-14T22:11:07+09:00"
 description: "2020年度学祭展示作品"
 ---
 
 
-「出会え！！」
+「witch」
 --------------------------
 
 
 
-![deae](./deae!!.jpg)
+![quontum](./quontum.jpg)

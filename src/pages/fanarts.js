@@ -16,8 +16,6 @@ import {
 
 const FanartIndex = ({ data }) => {
   const works = data.allMarkdownRemark.edges
-  // const works = data.allFile.nodes
-  console.log(works)
 
   return (
     <>

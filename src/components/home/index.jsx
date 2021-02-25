@@ -29,7 +29,7 @@ const Home = () => {
     <>
       <Overlay />
       <Title>
-        <HeadingXL>Terakawa Kohei </HeadingXL>
+        <HeadingXL>footerimage</HeadingXL>
       </Title>
 
       {/* <SectionIntro>
