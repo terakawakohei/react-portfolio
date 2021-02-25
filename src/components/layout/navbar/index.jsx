@@ -27,17 +27,17 @@ const Navbar = ({ siteTitle }) => (
             <li>
               <Link to="/works" className="lined-link" activeClassName="active">
                 {" "}
-                <span> Portfolio </span>{" "}
+                <span> original </span>{" "}
               </Link>
             </li>
             <li>
               <Link
-                to="/contact"
+                to="/fanarts"
                 className="lined-link"
                 activeClassName="active"
               >
                 {" "}
-                <span> Contact </span>{" "}
+                <span> fanart </span>{" "}
               </Link>
             </li>
           </NavbarList>

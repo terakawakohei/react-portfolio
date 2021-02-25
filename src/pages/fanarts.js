@@ -14,7 +14,7 @@ import {
   Text,
 } from "../components/common"
 
-const WorkIndex = ({ data }) => {
+const FanartIndex = ({ data }) => {
   const works = data.allMarkdownRemark.edges
   // const works = data.allFile.nodes
   console.log(works)
@@ -25,10 +25,11 @@ const WorkIndex = ({ data }) => {
         <SEO title="Showcases" />
         <Intro>
           <ContainerLayout>
-            <SubTitle className="text-dark">personal work</SubTitle>
+            <SubTitle className="text-dark">Garally</SubTitle>
 
             <ContainerLayout className="wrapper">
               {works.map(({ node }) => {
+                console.log(node)
                 const title = node.frontmatter.title || node.fields.slug
 
                 return (
@@ -112,7 +113,7 @@ const WorkIndex = ({ data }) => {
   )
 }
 
-export default WorkIndex
+export default FanartIndex
 
 export const pageQuery = graphql`
   query {
@@ -122,7 +123,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/^(?=.*works)(?=.*original)/" } }
+      filter: { fileAbsolutePath: { regex: "/^(?=.*works)(?=.*fanart)/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
