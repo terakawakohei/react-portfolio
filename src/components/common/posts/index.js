@@ -57,6 +57,9 @@ export const SmallText = styled.small`
 export const WorkPost = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border-radius: 13px;
+  background: #ffffff;
+  box-shadow: 6px 6px 12px #c7c7c7, -6px -6px 12px #f9f9f9;
 
   align-items: center;
   margin-bottom: 5rem;
@@ -71,24 +74,26 @@ export const WorkPost = styled.div`
     }
   }
   > div.media {
+    max-height: 530px;
     > .image-wrapper {
-      margin-bottom: 0.5rem;
+      margin: 2.5rem 2rem;
 
       @media (min-width: ${variables.breakpointPhone}) {
         /*box-shadow: 0 17px 56px rgba(125, 127, 129, 0.17);*/
       }
       > div {
-        transition: all 800ms ease-in-out;
+        /*transition: all 300ms ease-in-out;*/
       }
     }
   }
   &:hover {
     cursor: pointer;
     > div.media > .image-wrapper > div {
-      transform: scale(1.2);
+      /*transform: scale(1.1);*/
     }
   }
 `
+
 export const Category = styled.span`
   font-family: "GT-Walsheim-Pro-Bold";
   color: ${variables.primary};

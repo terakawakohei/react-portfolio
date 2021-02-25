@@ -7,6 +7,7 @@ import {
   Text,
   SubTitle,
   HeadingXL,
+  Overlay,
   BackgroundImage,
   ImageOverlay,
 } from "./style"
@@ -15,7 +16,7 @@ import { SectionIntro, ContainerLayout } from "../common"
 const Home = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "warriors.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "heat.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -26,11 +27,8 @@ const Home = () => {
   `)
   return (
     <>
+      <Overlay />
       <Title>
-        <HeadingXL>Terakawa Kohei </HeadingXL>
-        <HeadingXL>Terakawa Kohei </HeadingXL>
-        <HeadingXL>Terakawa Kohei </HeadingXL>
-        <HeadingXL>Terakawa Kohei </HeadingXL>
         <HeadingXL>Terakawa Kohei </HeadingXL>
       </Title>
 

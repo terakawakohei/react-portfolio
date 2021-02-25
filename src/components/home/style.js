@@ -12,6 +12,25 @@ export const HomeSection = styled.section`
     text-align: left;
   }
 `
+export const Overlay = styled.div`
+  position: absolute;
+
+  top: 52px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #131110;
+  /*background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.65) 100%
+    ),
+    url(qijin-xu.png) no-repeat center center scroll;*/
+
+  opacity: 0.3;
+  z-index: -1;
+`
 export const BackgroundImage = styled(BackgroundImg)`
   width: 100%;
   opacity: 1 !important;
@@ -37,6 +56,7 @@ export const Text = styled.p`
   font-size: 1.2rem;
   line-height: 2;
   color: #232323;
+  z-index: 999999;
   text-transform: capitalize;
   a {
     color: #3f51b5;

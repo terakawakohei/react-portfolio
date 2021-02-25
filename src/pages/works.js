@@ -47,7 +47,7 @@ const WorkIndex = ({ data }) => {
                   <WorkPost>
                     <div className="content">
                       <header>
-                        <Category>aaa</Category>
+                        {/* <Category>aaa</Category> */}
                         <Title>
                           {/* <Link className="text-primary lined-link" style={{ boxShadow: `none` }} to={node.fields.slug}>
                             {title}

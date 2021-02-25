@@ -3,13 +3,13 @@ title: portfolio-work-3
 date: "2015-05-06T23:46:37.121Z"
 category: backend development
 tags: ['Adobe xd', 'css', 'js', 'dashboard']
-image: './blog-image.jpg'
+image: './inanis.jpg'
 description: "Not only that, but the second address field also caused them to split their input incorrectly in the address fields. This led to confusion and frustration among users."  
 ---
 
 Have you ever filled out a form and froze on the address field? A [research study](https://baymard.com/blog/address-line-2) found that users come to a confusing stop when they encounter the “address line 2” field.
 
-![double_address_fields](./blog-image.jpg)
+![double_address_fields](./inanis.jpg)
 
 Not only that, but the second address field also caused them to split their input incorrectly in the address fields. This led to confusion and frustration among users.
 
