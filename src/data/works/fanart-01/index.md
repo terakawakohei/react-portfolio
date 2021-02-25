@@ -1,9 +1,9 @@
 ---
-title: portfolio-work-2
+title: fanart-01
 date: "2015-05-28T22:40:32.169Z"
 category: web design
 tags: ['Front End', 'css', 'js', 'dashboard']
-image: './gawrgura.jpg.jpg'
+image: './gawrgura.jpg'
 description: "Radio buttons and checkboxes have long been components that cause users confusion. These components are often used in the same context, but look completely different."
 ---
 
