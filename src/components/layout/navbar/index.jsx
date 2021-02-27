@@ -9,17 +9,10 @@ const Navbar = ({ siteTitle }) => (
   <nav>
     <div className="container">
       <NavbarElement>
-        <NavbarLogo>
-          <h3>
-            <Link to="/">
-              <span className="align-middle"> {siteTitle} </span>
-            </Link>
-          </h3>
-        </NavbarLogo>
         <div className="main-navigation">
           <NavbarList>
             <li>
-              <Link to="/about" className="lined-link" activeClassName="active">
+              <Link to="/" className="lined-link" activeClassName="active">
                 {" "}
                 <span> About </span>{" "}
               </Link>
