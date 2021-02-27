@@ -63,6 +63,9 @@ const WorkIndex = ({ data }) => {
                           <Img
                             fluid={node.frontmatter.image.childImageSharp.fluid}
                             title="work title"
+                            imgStyles={{
+                              objectPosition: "center",
+                            }}
                           />
                         </Link>
                       </div>
@@ -136,7 +139,7 @@ export const pageQuery = graphql`
             title
             image {
               childImageSharp {
-                fluid(maxWidth: 600, quality: 100) {
+                fluid(maxHeight: 400, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }

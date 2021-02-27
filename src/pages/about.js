@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link, graphql } from "gatsby"
-import { Calendar, Clock } from "react-feather"
+import { Twitter } from "react-feather"
 import Img from "gatsby-image"
 import { SectionIntro, ContainerLayout, Intro } from "../components/common"
 import {
@@ -34,6 +34,9 @@ const AboutIndex = ({ data }) => {
                   I am interested in creating artworks that incorporate 3D
                   computer graphics using software such as blender.
                 </Text>
+              </div>
+              <div>
+                <Twitter />
               </div>
             </HomeSection>
           </ContainerLayout>

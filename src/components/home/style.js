@@ -7,7 +7,7 @@ export const HomeSection = styled.section`
   text-align: center;
   @media only screen and (min-width: ${variables.breakpointLarge}) {
     display: grid;
-    grid-template-columns: 1fr 1.25fr;
+    grid-template-columns: 1.25fr 1fr;
     grid-gap: 10rem;
     text-align: left;
   }

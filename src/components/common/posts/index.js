@@ -72,7 +72,6 @@ export const WorkPost = styled.article`
     }
   }
   > div.media {
-    text-align: center;
     > .image-wrapper {
       margin-bottom: 0.5rem;
       max-height: 400px;
@@ -82,13 +81,14 @@ export const WorkPost = styled.article`
       }
       > a > div {
         transition: all 800ms ease-in-out;
+        -webkit-transform: scale(1.25);
       }
     }
   }
   &:hover {
     cursor: pointer;
     > div.media > .image-wrapper > a > div {
-      transform: scale(1.2) rotate(8deg);
+      transform: scale(1);
     }
   }
 `
