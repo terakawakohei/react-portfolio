@@ -4,7 +4,6 @@ import { AboutSection, Avatar, Title, Top, Text, SubTitle } from "./style"
 import { SectionIntro, ContainerLayout, ResumeButton } from "../common"
 
 import Fade from "react-reveal/Fade"
-import { Container } from "react-bootstrap"
 
 const Hero = () => {
   const [isDesktop, setIsDesktop] = useState(false)
@@ -21,19 +20,17 @@ const Hero = () => {
   return (
     <>
       <section id="hero" className="jumbotron">
-        <Container>
-          <Fade
-            left={isDesktop}
-            bottom={isMobile}
-            duration={1000}
-            delay={500}
-            distance="30px"
-          >
-            <Fade duration={1000} delay={500} distance="30px">
-              <Title> Welcome to my Portfolio! </Title>
-            </Fade>
+        <Fade
+          left={isDesktop}
+          bottom={isMobile}
+          duration={1000}
+          delay={500}
+          distance="30px"
+        >
+          <Fade duration={1000} delay={500} distance="30px">
+            <Title> Welcome to my Portfolio! </Title>
           </Fade>
-        </Container>
+        </Fade>
       </section>
     </>
   )
