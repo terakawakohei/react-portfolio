@@ -1,6 +1,7 @@
-import { createGlobalStyle } from 'styled-components';
-import variables from "../../../data/variables";
-import './fonts.css';
+import { createGlobalStyle } from "styled-components"
+import variables from "../../../data/variables"
+import "./fonts.css"
+import Bg from "../../../assets/img/warriors.jpg"
 
 export const GlobalStyle = createGlobalStyle`
   // normalize
@@ -157,4 +158,55 @@ export const GlobalStyle = createGlobalStyle`
 .error__emoji {
   width: 30vw;
 }
+#hero {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background: #FFFFFF;
+  font-weight: 400;
+  color: $272341;
+  padding: 0rem 5.6rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+  
+
+  /*background: url(${Bg});
+  background-position: center;
+  background-size: cover; */
+  
+  @media (max-width: ${variables.breakpointPhone}) {
+    padding: 0rem 1.6rem;
+  }
+
+  
+
+  .hero-title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    text-align: left;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 2.8rem;
+    }
+  }
+
 `

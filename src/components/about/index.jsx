@@ -1,54 +1,41 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { AboutSection, Avatar, Title, Text, SubTitle } from "./style"
+import { AboutSection, Avatar, Title, Top, Text, SubTitle } from "./style"
 import { SectionIntro, ContainerLayout, ResumeButton } from "../common"
+import "bootstrap/dist/css/bootstrap.min.css"
+
+import Fade from "react-reveal/Fade"
+import { Container } from "react-bootstrap"
 
 const About = () => {
-  //   const data = useStaticQuery(graphql`
-  //     query {
-  //       placeholderImage: file(relativePath: { eq: "warriors.jpg" }) {
-  //         childImageSharp {
-  //           fluid(maxWidth: 550) {
-  //             ...GatsbyImageSharpFluid
-  //           }
-  //         }
-  //       }
-  //     }
-  //   `)
+  const [isDesktop, setIsDesktop] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    if (window.innerWidth > 769) {
+      setIsDesktop(true)
+      setIsMobile(false)
+    } else {
+      setIsMobile(true)
+      setIsDesktop(false)
+    }
+  }, [])
   return (
     <>
-      <SectionIntro>
-        <ContainerLayout>
-          <AboutSection>
-            <div>
-              <SubTitle> Front End Developer</SubTitle>
-            </div>
-            <div>
+      <section id="hero">
+        <Container>
+          <Fade
+            left={isDesktop}
+            bottom={isMobile}
+            duration={1000}
+            delay={500}
+            distance="30px"
+          >
+            <Fade duration={1000} delay={500} distance="30px">
               <Title> Welcome to my Portfolio! </Title>
-              <Text>
-                {" "}
-                I'm a digital Front End Developer hailing from{" "}
-                <b className="text-primary lined-link">North Africa</b> living
-                in Casablanca.{" "}
-              </Text>
-              <Text>
-                {" "}
-                I love working with modern technologies, building and designing
-                awesome projects. I prefer minimalistic & clean designs with
-                strong user experience.
-              </Text>
-              <Text>
-                {" "}
-                behind the word mountains, far from the countries Vokalia and
-                Consonantia, there live the blind texts. Separated they live in
-                Bookmarksgrove right at the coast of the Semantics, a large
-                language ocean. A small river named Duden flows by their place
-                and supplies it with the necessary regelialia.
-              </Text>
-            </div>
-          </AboutSection>
-        </ContainerLayout>
-      </SectionIntro>
+            </Fade>
+          </Fade>
+        </Container>
+      </section>
     </>
   )
 }

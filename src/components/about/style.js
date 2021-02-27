@@ -11,15 +11,34 @@ export const AboutSection = styled.section`
     text-align: center;
   }
 `
+export const Top = styled.section`
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background: $white-color;
+  font-weight: 400;
+  color: $dark-blue-text;
+  padding: 0rem 5.6rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+`
 export const Avatar = styled(Img)`
   border-radius: 5px;
   box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.15);
   width: 100%;
 `
 export const Title = styled.h1`
-  font-size: 3rem;
+  font-size: 3.3rem;
   text-transform: capitalize;
   font-family: "GT-Walsheim-Pro-Bold";
+  color: #272341;
+
   @media (max-width: ${variables.breakpointPhone}) {
     font-size: 2rem;
   }

@@ -31,7 +31,7 @@ export const NavbarList = styled.ul`
   list-style: none;
   > li a {
     font-size: 1.2rem;
-    color: #232323;
+    color: #272341;
     padding: 0.5rem 0.2rem;
     margin: 0 1rem;
     text-decoration: none;
