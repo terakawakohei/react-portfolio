@@ -13,8 +13,41 @@ import {
   Isometric,
   AppLogo,
 } from "./style"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 const About = () => {
+  const setAnimation = () => {
+    gsap.fromTo(
+      "#wrapper-a div",
+      {
+        transform: "perspective(800px)rotateY(25deg) scale(0.9)rotateX(10deg)",
+        filter: "blur(2px)",
+        opacity: 0.5,
+        transition: "0.6s ease all",
+      }, //fromの設定
+      {
+        //toの設定
+        transform:
+          "perspective(800px)rotateY(-15deg)translateY(-50px)rotateX(10deg)scale(1)",
+        filter: "blur(0)",
+        opacity: 1,
+
+        scrollTrigger: {
+          trigger: "#wrapper-a",
+          start: "center 100%", //要素のトップが、画面の中央まできたら開始
+          end: "center 90%", //要素のボトムが、画面の中央まできたら終了
+          scrub: true,
+          onEnter: () => {
+            console.log("scroll In")
+          },
+          onEnterBack: () => {
+            console.log("scroll Back")
+          },
+        },
+      }
+    )
+  }
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "IMG_0672 2.png" }) {
@@ -38,6 +71,8 @@ const About = () => {
       setIsMobile(true)
       setIsDesktop(false)
     }
+    gsap.registerPlugin(ScrollTrigger)
+    setAnimation()
   }, [])
 
   return (
@@ -57,14 +92,13 @@ const About = () => {
           </AboutInfo>
 
           <AboutSection>
-            <div>
-              <Isometric>
-                {" "}
-                <Avatar
-                  fluid={data.placeholderImage.childImageSharp.fluid}
-                  alt="user photo"
-                />
-              </Isometric>
+            <div className="wrapper" id="wrapper-a">
+              {/* <Isometric> */}{" "}
+              <Avatar
+                fluid={data.placeholderImage.childImageSharp.fluid}
+                alt="user photo"
+              />
+              {/* </Isometric> */}
             </div>
             <div>
               <ProfGrid>

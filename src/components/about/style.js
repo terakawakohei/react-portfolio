@@ -25,17 +25,6 @@ export const Isometric = styled.div`
   filter: blur(2px);
   opacity: 0.5;
   transition: 0.6s ease all;
-
-  &:hover {
-     transform:
-      perspective(800px)
-      rotateY(-15deg)
-      translateY(-50px)
-      rotateX(10deg)
-      scale(1);
-    filter: blur(0);
-    opacity: 1;
-    }
   }
 `
 export const AppLogoSpin = keyframes`
