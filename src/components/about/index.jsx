@@ -3,7 +3,6 @@ import Fade from "react-reveal/Fade"
 import { Container, Row, Col } from "react-bootstrap"
 import Title from "../Title/Title"
 import Avator from "../../assets/img/warriors.jpg"
-import AboutImg from "../Image/AboutImg"
 
 const About = () => {
   const [isDesktop, setIsDesktop] = useState(false)
@@ -26,9 +25,7 @@ const About = () => {
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={Avator} />
-              </div>
+              <div className="about-wrapper__image">image</div>
             </Fade>
           </Col>
           <Col md={6} sm={12}>
