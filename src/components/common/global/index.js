@@ -122,6 +122,15 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   
+.pop-link {
+ display: inline-block;
+  transition: transform .3s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.2);
+    }
+
+}
 .lined-link {
   display: inline-block;
   position: relative;
@@ -153,8 +162,9 @@ export const GlobalStyle = createGlobalStyle`
     transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-color 0.2s ease-out, 
     -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
   }
+  
+ 
 }
-
 .error__emoji {
   width: 30vw;
 }

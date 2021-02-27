@@ -12,23 +12,19 @@ const Navbar = ({ siteTitle }) => (
         <div className="main-navigation">
           <NavbarList>
             <li>
-              <Link to="/" className="lined-link" activeClassName="active">
+              <Link to="/" className="pop-link" activeClassName="active">
                 {" "}
                 <span> About </span>{" "}
               </Link>
             </li>
             <li>
-              <Link to="/works" className="lined-link" activeClassName="active">
+              <Link to="/works" className="pop-link" activeClassName="active">
                 {" "}
                 <span> original </span>{" "}
               </Link>
             </li>
             <li>
-              <Link
-                to="/fanarts"
-                className="lined-link"
-                activeClassName="active"
-              >
+              <Link to="/fanarts" className="pop-link" activeClassName="active">
                 {" "}
                 <span> fanart </span>{" "}
               </Link>
