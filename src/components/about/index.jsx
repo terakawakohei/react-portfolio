@@ -139,7 +139,7 @@ const About = () => {
                   >
                     <Link
                       target="_blank"
-                      to="https://twitter.com/xxriver000"
+                      to="https://twitter.com/e_stock_p"
                       activeClassName="active"
                     >
                       <div>
