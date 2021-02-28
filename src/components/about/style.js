@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components"
 import variables from "../../data/variables"
 
 export const AboutSection = styled.section`
-  text-align: center;
+  text-align: left;
   @media only screen and (min-width: ${variables.breakpointLarge}) {
     display: grid;
     grid-template-columns: 1.25fr 0.85fr;
@@ -13,7 +13,15 @@ export const AboutSection = styled.section`
 `
 export const Avatar = styled(Img)`
   border-radius: 5px;
-  width: 100%;
+  width: 65%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+`
+export const Card = styled.div`
+  border-radius: 25px;
+  background: #ecf0f3;
+  box-shadow: 10px 10px 11px #dbdfe2, -10px -10px 11px #fdffff;
 `
 
 export const Isometric = styled.div`
@@ -38,24 +46,7 @@ export const Isometric = styled.div`
     }
   }
 `
-export const AppLogoSpin = keyframes`
-     transform:
-      perspective(800px)
-      rotateY(-15deg)
-      translateY(-50px)
-      rotateX(10deg)
-      scale(1);
-    filter: blur(0);
-    opacity: 1;
-`
-export const AppLogo = styled.div`
-  animation: ${AppLogoSpin};
-  animation-delay: -2s;
-  transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
-  filter: blur(2px);
-  opacity: 0.5;
-  transition: 0.6s ease all;
-`
+
 export const AboutInfo = styled.div`
   display: flex;
   align-items: center;
@@ -97,6 +88,7 @@ export const SubTitle = styled.h2`
   word-spacing: 8px;
   @media (min-width: ${variables.breakpointPhone}) {
     font-size: 1.8em;
+    text-align: center;
   }
 `
 export const LinkList = styled.ul`
@@ -109,12 +101,28 @@ export const LinkList = styled.ul`
 
     text-decoration: none;
     vertical-align: middle;
-    > svg {
+    > div {
       display: block;
       margin-left: auto;
       margin-right: auto;
-    }
+      width: 78px;
+      height: 75px;
+      border-radius: 50%;
+      text-align: center;
 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      box-shadow: 0 2px 2.2px rgba(0, 0, 0, 0.017),
+        0 4.9px 5.3px rgba(0, 0, 0, 0.024), 0 9.1px 10px rgba(0, 0, 0, 0.03),
+        0 16.3px 17.9px rgba(0, 0, 0, 0.036),
+        0 30.5px 33.4px rgba(0, 0, 0, 0.043), 0 73px 80px rgba(0, 0, 0, 0.06);
+
+      > svg {
+        vertical-align: middle;
+      }
+    }
     svg {
       display: block;
       vertical-align: middle;

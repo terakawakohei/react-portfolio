@@ -12,6 +12,7 @@ import {
   SubTitle,
   Text,
   LinkList,
+  Card,
   Isometric,
   AppLogo,
 } from "./style"
@@ -39,7 +40,7 @@ const About = () => {
         scrollTrigger: {
           trigger: "#wrapper-a",
           start: "center 100%", //要素のトップが、画面の中央まできたら開始
-          end: "center 60%", //要素のボトムが、画面の中央まできたら終了
+          end: "center 75%", //要素のボトムが、画面の中央まできたら終了
           scrub: true,
         },
       }
@@ -74,32 +75,31 @@ const About = () => {
 
   return (
     <>
+      <AboutInfo>
+        <Fade
+          left={isDesktop}
+          bottom={isMobile}
+          duration={1000}
+          delay={600}
+          distance="30px"
+        >
+          <Title> About me</Title>
+        </Fade>
+      </AboutInfo>
       <SectionIntro>
         <ContainerLayout>
-          <AboutInfo>
-            <Fade
-              left={isDesktop}
-              bottom={isMobile}
-              duration={1000}
-              delay={600}
-              distance="30px"
-            >
-              <Title> About me</Title>
-            </Fade>
-          </AboutInfo>
-
+          <Fade
+            left={isDesktop}
+            bottom={isMobile}
+            duration={1000}
+            delay={1000}
+            distance="30px"
+          >
+            <SubTitle style={{ paddingLeft: "1rem" }}> Terakawa Kohei</SubTitle>
+          </Fade>
           <AboutSection>
-            <div>
+            <div style={{ paddingLeft: "1rem" }}>
               {/* <Isometric> */}{" "}
-              <Fade
-                left={isDesktop}
-                bottom={isMobile}
-                duration={1000}
-                delay={1000}
-                distance="30px"
-              >
-                <SubTitle> Terakawa Kohei</SubTitle>
-              </Fade>
               <Fade
                 left={isDesktop}
                 bottom={isMobile}
@@ -118,14 +118,10 @@ const About = () => {
                   I am interested in creating artworks that incorporate 3D
                   computer graphics using software such as blender.
                 </Text>
-
-                <p className="about-wrapper__info-text">
-                  {"神戸大学情報知能工学科"}
-                </p>
               </Fade>
               {/* </Isometric> */}
             </div>
-            <div>
+            <div style={{ paddingTop: "2rem" }}>
               <div className="wrapper" id="wrapper-a">
                 <Avatar
                   fluid={data.placeholderImage.childImageSharp.fluid}
@@ -146,7 +142,9 @@ const About = () => {
                       to="https://twitter.com/xxriver000"
                       activeClassName="active"
                     >
-                      <Twitter />
+                      <div>
+                        <Twitter size={27} />
+                      </div>
                     </Link>
                   </Fade>
                 </li>
@@ -163,7 +161,9 @@ const About = () => {
                       to="https://github.com/terakawakohei"
                       activeClassName="active"
                     >
-                      <GitHub />
+                      <div>
+                        <GitHub size={27} />
+                      </div>
                     </Link>
                   </Fade>
                 </li>
