@@ -20,7 +20,7 @@ const FanartIndex = ({ data }) => {
   return (
     <>
       <Layout>
-        <SEO title="Showcases" />
+        <SEO title="Gallery" />
         <Intro>
           <ContainerLayout>
             <SubTitle className="text-dark">Garally</SubTitle>

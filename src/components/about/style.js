@@ -6,7 +6,7 @@ export const AboutSection = styled.section`
   text-align: center;
   @media only screen and (min-width: ${variables.breakpointLarge}) {
     display: grid;
-    grid-template-columns: 0.85fr 1.25fr;
+    grid-template-columns: 1.25fr 0.85fr;
     grid-gap: 10rem;
     text-align: left;
   }
@@ -25,6 +25,17 @@ export const Isometric = styled.div`
   filter: blur(2px);
   opacity: 0.5;
   transition: 0.6s ease all;
+
+  &:hover {
+     transform:
+      perspective(800px)
+      rotateY(-15deg)
+      translateY(-50px)
+      rotateX(10deg)
+      scale(1);
+    filter: blur(0);
+    opacity: 1;
+    }
   }
 `
 export const AppLogoSpin = keyframes`
@@ -59,16 +70,6 @@ export const ProfGrid = styled.div`
   }
 `
 
-export const Title = styled.h1`
-  font-size: 0.3rem;
-  text-transform: capitalize;
-  font-family: "GT-Walsheim-Pro-Bold";
-  color: #272341;
-
-  @media (max-width: ${variables.breakpointPhone}) {
-    font-size: 2rem;
-  }
-`
 export const Text = styled.p`
   font-size: 1.2rem;
   line-height: 2;
@@ -79,14 +80,47 @@ export const Text = styled.p`
     text-decoration: underline;
   }
 `
+export const Title = styled.h1`
+  font-family: "GT-Walsheim-Pro-Bold";
+  font-size: 2rem;
+  text-transform: capitalize;
+  @media (max-width: ${variables.breakpointPhone}) {
+    font-size: 1.5rem;
+  }
+`
 export const SubTitle = styled.h2`
   font-family: "GT-Walsheim-Pro-Medium";
   margin-top: 3rem;
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   word-spacing: 8px;
   @media (min-width: ${variables.breakpointPhone}) {
     font-size: 1.8em;
+  }
+`
+export const LinkList = styled.ul`
+  display: grid;
+  padding-left: 0;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  > li a {
+    color: #272341;
+
+    text-decoration: none;
+    vertical-align: middle;
+    > svg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    svg {
+      display: block;
+      vertical-align: middle;
+    }
+    @media (max-width: ${variables.breakpointPhone}) {
+      font-size: 1rem;
+    }
   }
 `

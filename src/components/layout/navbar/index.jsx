@@ -14,7 +14,7 @@ const Navbar = ({ siteTitle }) => (
             <li>
               <Link to="/" className="pop-link" activeClassName="active">
                 {" "}
-                <span> About </span>{" "}
+                <span> about </span>{" "}
               </Link>
             </li>
             <li>
