@@ -34,9 +34,9 @@ const Footer = () => {
           </FooterBody>
           <div className="box">
             {/* <SubRight> Good design doesn't date. Bad design does. </SubRight> */}
-            <CopyRight className="text-dark">
-              ©<span>2021 Terakawa Kohei</span>
-            </CopyRight>
+            {/* <CopyRight className="text-dark">
+              ©<span>2021 </span>
+            </CopyRight> */}
           </div>
         </ContainerLayout>
       </FooterStyle>
