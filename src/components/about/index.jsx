@@ -98,7 +98,13 @@ const About = () => {
             <SubTitle style={{ paddingLeft: "1rem" }}> Terakawa Kohei</SubTitle>
           </Fade>
           <AboutSection>
-            <div style={{ marginTop: "2rem" }}>
+            <div
+              style={{
+                marginTop: "2rem",
+                paddingLeft: "1rem",
+                paddingRight: "1rem",
+              }}
+            >
               <Fade
                 left={isDesktop}
                 bottom={isMobile}
@@ -120,7 +126,7 @@ const About = () => {
                 </Text>
               </Fade>
             </div>
-            <div style={{ paddingTop: "2rem" }}>
+            <div style={{ paddingTop: "3rem" }}>
               <div className="wrapper" id="wrapper-a">
                 <Avatar
                   fluid={data.placeholderImage.childImageSharp.fluid}
