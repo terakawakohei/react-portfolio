@@ -115,7 +115,7 @@ const About = () => {
                 <Text>
                   {" "}
                   I'm a student of Computer Science and Systems Engineering
-                  Department in Kobe Uvin.
+                  Department in Kobe University.
                 </Text>
 
                 <Text style={{ marginTop: "2rem" }}>
