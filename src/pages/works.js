@@ -25,7 +25,7 @@ const WorkIndex = ({ data }) => {
         <SEO title="Gallery" />
         <Intro>
           <ContainerLayout>
-            <SubTitle className="text-dark">personal work</SubTitle>
+            <SubTitle className="text-dark">Garally</SubTitle>
 
             <ContainerLayout className="wrapper">
               {works.map(({ node }) => {
@@ -35,7 +35,8 @@ const WorkIndex = ({ data }) => {
                   <WorkPost key={node.fields.slug}>
                     <div className="content">
                       <header>
-                        <Category>{node.frontmatter.category}</Category>
+                        {/* <Category>{node.frontmatter.category}</Category> */}
+                        <span></span>
                         <Title>
                           <Link
                             className="text-primary lined-link"

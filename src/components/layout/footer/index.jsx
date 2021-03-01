@@ -10,6 +10,7 @@ import {
   FooterSocialMedia,
 } from "./style"
 import { ContainerLayout, ButtonDefault } from "../../common"
+import { Container } from "react-bootstrap"
 
 const Footer = () => {
   return (
@@ -34,11 +35,7 @@ const Footer = () => {
           <div className="box">
             {/* <SubRight> Good design doesn't date. Bad design does. </SubRight> */}
             <CopyRight className="text-dark">
-              ©
-              <span>
-                2021, Built with {` `}
-                <a href="https://www.gatsbyjs.org">Gatsby</a>{" "}
-              </span>
+              ©<span>2021 Terakawa Kohei</span>
             </CopyRight>
           </div>
         </ContainerLayout>

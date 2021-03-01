@@ -78,6 +78,8 @@ export const WorkPost = styled.article`
       overflow: hidden;
       @media (min-width: ${variables.breakpointPhone}) {
         box-shadow: 0 17px 56px rgba(125, 127, 129, 0.17);
+        border-radius: 0.9rem;
+        border: 10px solid #fff;
       }
       > a > div {
         transition: all 800ms ease-in-out;

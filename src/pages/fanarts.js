@@ -34,7 +34,8 @@ const FanartIndex = ({ data }) => {
                   <WorkPost key={node.fields.slug}>
                     <div className="content">
                       <header>
-                        <Category>{node.frontmatter.category}</Category>
+                        {/* <Category>{node.frontmatter.category}</Category> */}
+                        <span></span>
                         <Title>
                           <Link
                             className="text-primary lined-link"

@@ -40,7 +40,7 @@ const About = () => {
         scrollTrigger: {
           trigger: "#wrapper-a",
           start: "center 100%", //要素のトップが、画面の中央まできたら開始
-          end: "center 75%", //要素のボトムが、画面の中央まできたら終了
+          end: "center 65%", //要素のボトムが、画面の中央まできたら終了
           scrub: true,
         },
       }
