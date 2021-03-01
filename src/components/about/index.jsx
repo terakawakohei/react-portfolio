@@ -134,7 +134,7 @@ const About = () => {
                     left={isDesktop}
                     bottom={isMobile}
                     duration={1500}
-                    delay={1600}
+                    delay={1400}
                     distance="30px"
                   >
                     <Link
@@ -153,7 +153,7 @@ const About = () => {
                     left={isDesktop}
                     bottom={isMobile}
                     duration={1500}
-                    delay={1800}
+                    delay={1450}
                     distance="30px"
                   >
                     <Link

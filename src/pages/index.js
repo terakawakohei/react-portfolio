@@ -8,6 +8,7 @@ import Footer from "./../components/layout/footer"
 import BackgroundImage from "./../components/BackgroundImage"
 import Hero from "../components/hero"
 import About from "../components/about"
+import GalerryIntro from "../components/galerryIntro"
 
 import {
   GlobalStyle,
@@ -20,6 +21,7 @@ const IndexPage = () => (
     <SEO title="About me" />
     <Hero />
     <About />
+    <GalerryIntro />
   </Layout>
 )
 
