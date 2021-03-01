@@ -98,8 +98,7 @@ const About = () => {
             <SubTitle style={{ paddingLeft: "1rem" }}> Terakawa Kohei</SubTitle>
           </Fade>
           <AboutSection>
-            <div style={{ paddingLeft: "1rem" }}>
-              {/* <Isometric> */}{" "}
+            <div style={{ marginTop: "2rem" }}>
               <Fade
                 left={isDesktop}
                 bottom={isMobile}
@@ -110,16 +109,16 @@ const About = () => {
                 <Text>
                   {" "}
                   I'm a student of Computer Science and Systems Engineering
-                  Department in{" "}
-                  <b className="text-primary lined-link">Kobe Univ.</b>{" "}
+                  Department in Kobe Uvin.
                 </Text>
-                <Text>
+
+                <Text style={{ marginTop: "2rem" }}>
                   {" "}
-                  I am interested in creating artworks that incorporate 3D
-                  computer graphics using software such as blender.
+                  I like to draw and create artworks as a hobby. I am interested
+                  in creating artworks with 3D Computer Graphics using{" "}
+                  <b className="text-primary lined-link">blender</b>.{" "}
                 </Text>
               </Fade>
-              {/* </Isometric> */}
             </div>
             <div style={{ paddingTop: "2rem" }}>
               <div className="wrapper" id="wrapper-a">

@@ -17,5 +17,5 @@ description: "3 works"
 ![](./kaho.JPG)
 ***
 
-![](./りあむ.JPG)
+![](./りあむ.jpg)
 

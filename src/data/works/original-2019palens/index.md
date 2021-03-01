@@ -16,7 +16,6 @@ description: "4 works"
 
 ***
 
-「上界」
 
 ![](./zyoukai.JPG)
 
