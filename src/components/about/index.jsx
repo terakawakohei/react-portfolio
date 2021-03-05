@@ -1,20 +1,16 @@
 import React, { useState, useEffect } from "react"
 import Fade from "react-reveal/Fade"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { SectionIntro, ContainerLayout, ResumeButton } from "../common"
-import Avator from "../../assets/img/warriors.jpg"
+import { SectionIntro, ContainerLayout } from "../common"
+
 import {
   AboutSection,
   Avatar,
   AboutInfo,
-  ProfGrid,
   Title,
   SubTitle,
   Text,
   LinkList,
-  Card,
-  Isometric,
-  AppLogo,
 } from "./style"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
@@ -144,7 +140,7 @@ const About = () => {
                   >
                     <Link
                       target="_blank"
-                      to="https://twitter.com/e_stock_p"
+                      to="https://twitter.com/xxriver000"
                       activeClassName="active"
                     >
                       <div>

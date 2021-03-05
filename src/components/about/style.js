@@ -1,5 +1,5 @@
 import Img from "gatsby-image"
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 import variables from "../../data/variables"
 
 export const AboutSection = styled.section`

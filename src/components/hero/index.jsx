@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { AboutSection, Avatar, Title, Top, Text, SubTitle } from "./style"
-import { SectionIntro, ContainerLayout, ResumeButton } from "../common"
+
+import { Title } from "./style"
 
 import Fade from "react-reveal/Fade"
 

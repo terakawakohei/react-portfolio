@@ -7,7 +7,6 @@ import {
   Tag,
   ContainerLayout,
   WorkPost,
-  Category,
   Intro,
   SubTitle,
   Title,
@@ -68,40 +67,6 @@ const FanartIndex = ({ data }) => {
                       </div>
                     </div>
                   </WorkPost>
-
-                  /* <WorkPost>
-                    <div className="content">
-                      <header>
-                       
-                        <Title>
-                         
-                          ii
-                        </Title>
-                      </header>
-                      <Text
-                       
-                        uu
-                      />
-                      <div>
-                     
-                        ee
-                      </div>
-                    </div>
-                    <div className="media">
-                      <div className="image-wrapper">
-                      
-                        <Img
-                          fluid={node.childImageSharp.fluid}
-                          imgStyle={{
-                            objectFit: "scale-down",
-                            maxHeight: "450px",
-                            objectPosition: "center",
-                           
-                          }}
-                        />
-                      </div>
-                    </div>
-                  </WorkPost> */
                 )
               })}
             </ContainerLayout>
@@ -150,26 +115,3 @@ export const pageQuery = graphql`
     }
   }
 `
-
-// export const pageQuery = graphql`
-//   query {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-//     allFile(filter: { sourceInstanceName: { eq: "images" } }) {
-//       nodes {
-//         relativePath
-//         name
-//         childImageSharp {
-//           fluid {
-//             ...GatsbyImageSharpFluid
-//             src
-//           }
-//           id
-//         }
-//       }
-//     }
-//   }
-// `

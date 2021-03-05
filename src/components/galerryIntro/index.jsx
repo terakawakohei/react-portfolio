@@ -1,25 +1,11 @@
 import React, { useState, useEffect } from "react"
 import Fade from "react-reveal/Fade"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { SectionIntro, ContainerLayout, ResumeButton } from "../common"
+import { SectionIntro, ContainerLayout } from "../common"
 
-import {
-  GalerrySection,
-  Avatar,
-  AboutInfo,
-  ProfGrid,
-  Title,
-  SubTitle,
-  Category,
-  Text,
-  LinkList,
-  Card,
-  Isometric,
-  AppLogo,
-} from "./style"
+import { GalerrySection, Avatar, AboutInfo, Title, SubTitle } from "./style"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { Twitter, GitHub } from "react-feather"
 
 const GalerryIntro = () => {
   const setAnimation1 = () => {
