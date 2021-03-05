@@ -130,7 +130,7 @@ const About = () => {
                 />
               </div>
               <LinkList>
-                <li>
+                {/* <li>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
@@ -148,7 +148,7 @@ const About = () => {
                       </div>
                     </Link>
                   </Fade>
-                </li>
+                </li> */}
                 <li>
                   <Fade
                     left={isDesktop}

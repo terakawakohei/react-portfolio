@@ -94,7 +94,7 @@ export const SubTitle = styled.h2`
 export const LinkList = styled.ul`
   display: grid;
   padding-left: 0;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   list-style: none;
   > li a {
     color: #272341;
