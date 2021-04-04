@@ -64,7 +64,7 @@ const GalerryIntro = () => {
   }
   const data = useStaticQuery(graphql`
     query {
-      original: file(relativePath: { eq: "pvd.jpg" }) {
+      original: file(relativePath: { eq: "behind.JPG" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -143,6 +143,16 @@ const GalerryIntro = () => {
                   />
                 </Link>
               </div>
+              <Fade
+                left={isDesktop}
+                bottom={isMobile}
+                duration={1000}
+                delay={1200}
+                distance="30px"
+              >
+              <Link to="/works">  <LinkTitle> {" "}
+                  <b className="text-primary lined-link">see more</b>{" "}</LinkTitle></Link>
+                  </Fade>
             </div>
             <div>
               <Fade
@@ -162,29 +172,19 @@ const GalerryIntro = () => {
                   />
                 </Link>
               </div>
-            </div>
-          </GalerrySection>
-          
-          <GalerrySection>
-          <Fade
+              <Fade
                 left={isDesktop}
                 bottom={isMobile}
                 duration={1000}
                 delay={1200}
                 distance="30px"
               >
-                <div>
-                <Link to="/works">  <LinkTitle> {" "}
+              <Link to="/fanarts">  <LinkTitle> {" "}
                   <b className="text-primary lined-link">see more</b>{" "}</LinkTitle></Link>
-        
-          </div>
-          <div> 
-          <Link to="/fanarts"><LinkTitle> {" "}
-                  <b className="text-primary lined-link">see more</b>{" "}</LinkTitle></Link>
-          </div>
-              </Fade>
-          
+                  </Fade>
+            </div>
           </GalerrySection>
+        
         </ContainerLayout>
       </SectionIntro>
     </>

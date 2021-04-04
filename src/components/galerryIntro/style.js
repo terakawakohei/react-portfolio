@@ -46,7 +46,7 @@ export const SubTitle = styled.h2`
     text-align: center;
   }
 `
-export const LinkTitle = styled.h4`
+export const LinkTitle = styled.h3`
   font-family: "GT-Walsheim-Pro-Medium";
   margin-top: 3rem;
   margin-bottom: 3rem;
