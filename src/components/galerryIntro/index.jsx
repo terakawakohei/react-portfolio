@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { SectionIntro, ContainerLayout } from "../common"
 
-import { GalerrySection, Avatar, AboutInfo, Title, SubTitle } from "./style"
+import { GalerrySection, Avatar, AboutInfo, Title, SubTitle,LinkTitle } from "./style"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
@@ -133,7 +133,7 @@ const GalerryIntro = () => {
                 delay={1000}
                 distance="30px"
               >
-                <SubTitle> original</SubTitle>
+                <SubTitle> originals</SubTitle>
               </Fade>
               <div id="card1">
                 <Link to="/works">
@@ -152,7 +152,7 @@ const GalerryIntro = () => {
                 delay={1000}
                 distance="30px"
               >
-                <SubTitle> fanart</SubTitle>
+                <SubTitle> fanarts</SubTitle>
               </Fade>
               <div id="card2">
                 <Link to="/fanarts">
@@ -163,6 +163,27 @@ const GalerryIntro = () => {
                 </Link>
               </div>
             </div>
+          </GalerrySection>
+          
+          <GalerrySection>
+          <Fade
+                left={isDesktop}
+                bottom={isMobile}
+                duration={1000}
+                delay={1200}
+                distance="30px"
+              >
+                <div>
+                <Link to="/works">  <LinkTitle> {" "}
+                  <b className="text-primary lined-link">see more</b>{" "}</LinkTitle></Link>
+        
+          </div>
+          <div> 
+          <Link to="/fanarts"><LinkTitle> {" "}
+                  <b className="text-primary lined-link">see more</b>{" "}</LinkTitle></Link>
+          </div>
+              </Fade>
+          
           </GalerrySection>
         </ContainerLayout>
       </SectionIntro>

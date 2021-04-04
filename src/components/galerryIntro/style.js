@@ -46,3 +46,14 @@ export const SubTitle = styled.h2`
     text-align: center;
   }
 `
+export const LinkTitle = styled.h4`
+  font-family: "GT-Walsheim-Pro-Medium";
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  word-spacing: 8px;
+  @media (min-width: ${variables.breakpointPhone}) {
+    font-size: 1.8em;
+    text-align: center;
+  }
+`
