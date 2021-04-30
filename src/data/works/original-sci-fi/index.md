@@ -4,7 +4,7 @@ tags: ['photoshop', 'procriate']
 category: original
 image: './behind.JPG'
 date: "2021-03-26T00:00:00+09:00"
-description: "5 works"
+description: "4 works"
 ---
 
 
@@ -20,6 +20,3 @@ description: "5 works"
 ***
 
 ![](./009.jpg)
-***
-
-![](./kedaruge.JPG)

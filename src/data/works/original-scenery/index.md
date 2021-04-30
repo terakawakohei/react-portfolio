@@ -3,8 +3,8 @@ title: "scenery"
 tags: ['photoshop', 'procriate']
 category: original
 image: './warriors.jpg'
-date: "2020-11-25T22:11:08+09:00"
-description: "5 works"
+date: "2020-11-26T22:11:08+09:00"
+description: "6 works"
 ---
 
 ***
@@ -26,6 +26,11 @@ description: "5 works"
 
 
 ![](./smile!.jpg)
+
+***
+
+
+![](./koya.JPG)
 
 ***
 
